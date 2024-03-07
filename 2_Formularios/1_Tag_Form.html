@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando Com Formularios de Cadastro</title>
+
+</head>
+
+<body>
+    <!--Para criamos formularios utilizamos a tag form
+    alem disso podemos da um nome ao formulario
+    (action) indica para onde os dados vao
+    (method) = GET e POST
+    (Metodo) (GET)  envia os dados no endereço da  barra do navegador
+    (Metodo) (POST) envia os dados na parte do corpo da requisição
+    (autocomplete) (off) evita Grava os dados, (on) Grava os dados
+    (onsubmit alert) Coloca um alerta para  mostrar o que esta sendo enviado -->
+
+    <form name="signup"  
+          method="post" 
+          target="_blank"
+          autocomplete="on"
+          onsubmit="alert('Dados enviados')"
+          action="https://www.siteTeste.com">
+
+        Nome: <input type="text" name="name"/><br>
+        idade: <input type="number" name="age"/><br>
+        E-mail: <input type="email" name="E-mail"/><br>
+        Senha: <input type="password" name="password"/><br>
+        <!--Criando o Botao-->
+        <button type="submit">Enviar</button>
+    </form>
+    
+</body>
+</html>
