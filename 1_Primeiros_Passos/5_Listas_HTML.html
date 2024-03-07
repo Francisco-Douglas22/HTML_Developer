@@ -3,6 +3,7 @@
     <!-- Cabeça do HTML onde está o título da página e outros metadados -->
     <head>
         <!-- Sempre utilizamos o title dentro do head -->
+        <!-- Define o título da página, que é exibido na barra de título do navegador -->
         <title>HTML</title>
     </head>
 
@@ -12,24 +13,41 @@
         
         <!-- Título da seção de listas aninhadas ordenadas -->
         <h3>Listas Aninhadas Ordenadas</h3>
-        <!-- Lista ordenada -->
+
+        <!-- <ol> Lista ordenada -->
         <ol>
-            <!-- Item da lista -->
+            <!-- <li> Item da lista -->
+            <!-- Cada item da lista é marcado com a tag <li> -->
             <li>Item 1</li>
             <li>Item 2</li>
             <li>Item 3 Testes</li>
 
             <!-- Posso colocar outra lista dentro de um item da lista -->
+            <!-- Aqui estamos aninhando uma nova lista ordenada dentro de um item da lista ordenada -->
             <ol>
+                <!-- Mais itens dentro da lista aninhada -->
                 <li>Item 1</li>
                 <li>Item 2</li>
+
+                <!-- Podemos colocar outra lista dentro de um item da lista -->
+                <!-- Aqui estamos aninhando uma lista ordenada dentro de um item da lista ordenada -->
+                <li>
+                    <ol>
+                        <!-- Itens da segunda lista aninhada -->
+                        <li>Lista2.1</li>
+                        <li>Lista2.2</li>
+                    </ol>
+                </li>
             </ol>
         </ol>
 
         <!-- Título da seção de listas não ordenadas -->
         <h3>Listas Não Ordenadas</h3>
         <!-- Lista não ordenada -->
+        <!-- <ul> Lista não ordenada -->
         <ul>
+            <!-- <li> Item da lista -->
+            <!-- Cada item da lista é marcado com a tag <li> -->
             <li>Item 1</li>
             <li>Item 2</li>
             <li>Item 3</li>
