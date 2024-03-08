@@ -1,0 +1,91 @@
+<!DOCTYPE html> <!-- Declara o tipo de documento HTML -->
+<html lang="en"> <!-- Define o idioma da página -->
+<head>
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres para UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Define a escala inicial e a largura da viewport para dispositivos móveis -->
+    <title>Document</title> <!-- Define o título da página -->
+
+    <!--CSS-->
+    <style>
+        .row{
+            margin:3px; /* Define a margem de 3 pixels para todos os lados do elemento com a classe 'row' */
+        }
+        label{
+            width: 100px; /* Define a largura do elemento 'label' como 100 pixels */
+            text-align: right; /* Alinha o texto à direita dentro do elemento 'label' */
+            display: inline-block; /* Faz com que os elementos 'label' se comportem como blocos em linha */
+            padding-right: 5px; /* Define o preenchimento de 5 pixels à direita do elemento 'label' */
+        }
+        fieldset{
+            margin: 15px; /* Define a margem de 15 pixels para todos os lados do elemento 'fieldset' */
+            border-radius: 10px; /* Define o raio da borda do elemento 'fieldset' como 10 pixels */
+            border-color: gray; /* Define a cor da borda do elemento 'fieldset' como cinza */
+        }
+        h1{
+            text-align: center; /* Alinha o texto centralmente dentro do elemento 'h1' */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Tag Fieldset: Define um grupo de controles em um formulário -->
+    <!-- Dev class=row: Define uma divisão na qual um bloco de conteúdo está localizado, 
+        com a classe 'row' -->
+    <!-- Tag Legend: Define uma legenda para o elemento 'fieldset' -->
+    <h1><strong><font color="gray">Formulario de Cadastro</font></strong></h1> 
+    <!-- Define um título principal para o formulário de cadastro -->
+    <fieldset>
+        <legend>Dados Pessoais</legend> 
+        <!-- Define uma legenda para o grupo de controles de dados pessoais -->
+        <div class="row">
+            <label>Nome:</label><input type="text"/> 
+            <!-- Define um rótulo 'Nome' para um campo de entrada de texto -->
+            <label>E-mail:</label><input type="text"/> 
+            <!-- Define um rótulo 'E-mail' para um campo de entrada de texto -->
+        </div>
+
+        <div class="row">
+            <label>Profissão:</label><input type="text"/> 
+            <!-- Define um rótulo 'Profissão' para um campo de entrada de texto -->
+            <label>Empresa:</label><input type="text"/> 
+            <!-- Define um rótulo 'Empresa' para um campo de entrada de texto -->
+        </div>
+    </fieldset>
+
+    <fieldset>
+        <legend>Endereço</legend> 
+        <!-- Define uma legenda para o grupo de controles de endereço -->
+        <div class="row">
+            <label>Estado:</label><input type="text"/> 
+            <!-- Define um rótulo 'Estado' para um campo de entrada de texto -->
+            <label>Cidade:</label><input type="text"/> 
+            <!-- Define um rótulo 'Cidade' para um campo de entrada de texto -->
+        </div>
+
+        <div class="row">
+            <label>Bairro</label><input type="text"/> 
+            <!-- Define um rótulo 'Bairro' para um campo de entrada de texto -->
+            <label>Numero:</label><input type="number"/> 
+            <!-- Define um rótulo 'Número' para um campo de entrada numérica -->
+        </div>
+    </fieldset>
+
+    <fieldset>
+        <legend>Dados de Contato</legend> 
+        <!-- Define uma legenda para o grupo de controles de dados de contato -->
+        <div class="row">
+            <label>Celular:</label><input type="number"/> 
+            <!-- Define um rótulo 'Celular' para um campo de entrada numérica -->
+            <label>Linkdin:</label><input type="text"/> 
+            <!-- Define um rótulo 'Linkdin' para um campo de entrada de texto -->
+        </div>
+
+        <div class="row">
+            <label>GitHub:</label><input type="text"/> 
+            <!-- Define um rótulo 'GitHub' para um campo de entrada de texto -->
+            <label>Whatsapp:</label><input type="number"/> 
+            <!-- Define um rótulo 'Whatsapp' para um campo de entrada numérica -->
+        </div>
+    </fieldset>
+</body>
+</html>
