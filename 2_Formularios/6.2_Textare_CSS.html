@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <!-- Estilos CSS -->
+    <style>
+        /* Estilos para o corpo da página */
+        body {
+            font-family: Arial, sans-serif; /* Define a fonte do texto */
+            background-color: #f4f4f4; /* Define a cor de fundo */
+            margin: 0; /* Remove as margens padrão */
+            padding: 20px; /* Adiciona um espaçamento interno */
+        }
+
+        /* Estilos para o formulário */
+        form {
+            background-color: #fff; /* Define a cor de fundo do formulário */
+            padding: 20px; /* Adiciona um espaçamento interno */
+            border-radius: 5px; /* Adiciona bordas arredondadas */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra */
+        }
+
+        /* Estilos para as etiquetas */
+        label {
+            display: block; /* Faz com que as etiquetas ocupem uma linha inteira */
+            margin-bottom: 5px; /* Adiciona um espaçamento na parte inferior */
+            font-weight: bold; /* Define o texto em negrito */
+        }
+
+        /* Estilos para os campos de entrada */
+        input[type="text"],
+        input[type="number"],
+        input[type="email"],
+        input[type="password"],
+        textarea {
+            width: 100%; /* Define a largura total */
+            padding: 10px; /* Adiciona um espaçamento interno */
+            margin-bottom: 10px; /* Adiciona um espaçamento na parte inferior */
+            border: 1px solid #ccc; /* Adiciona uma borda */
+            border-radius: 3px; /* Adiciona bordas arredondadas */
+            box-sizing: border-box; /* Garante que a largura inclua preenchimento e borda */
+        }
+
+        /* Estilos para o botão de envio */
+        button[type="submit"] {
+            width: 100%; /* Define a largura total */
+            padding: 10px; /* Adiciona um espaçamento interno */
+            border: none; /* Remove a borda */
+            border-radius: 3px; /* Adiciona bordas arredondadas */
+            background-color: #4CAF50; /* Define a cor de fundo */
+            color: white; /* Define a cor do texto */
+            cursor: pointer; /* Altera o cursor para indicar que é clicável */
+            transition: background-color 0.3s; /* Adiciona uma transição suave */
+        }
+
+        /* Estilos para o botão de envio ao passar o mouse */
+        button[type="submit"]:hover {
+            background-color: #45a049; /* Altera a cor de fundo ao passar o mouse */
+        }
+    </style>
+</head>
+<body>
+    <!-- Formulário de exemplo -->
+    <form onsubmit="" method="get">
+        <label>Nome:</label>
+        <input type="text" name="name"><br>
+
+        <label>Cargo:</label>
+        <select name="role">
+            <option value="">Selecione o Cargo</option>
+            <option value="Gerente">Gerente</option>
+            <option value="Diretor">Diretor</option>
+            <option value="Presidente">Presidente</option>
+        </select><br> 
+
+        <label>Assunto:</label>
+        <input type="text" name="subject"><br>
+
+        <label>Mensagem:</label>
+        <textarea rows="5" cols="50" name="message"></textarea><br>
+
+        <button type="submit">Enviar</button> <!-- Botão de envio do formulário -->
+    </form>
+</body>
+</html>

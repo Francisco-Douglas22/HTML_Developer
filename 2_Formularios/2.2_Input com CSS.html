@@ -1,0 +1,129 @@
+<!DOCTYPE html> <!-- Define o tipo de documento HTML -->
+<html lang="en"> <!-- Define o idioma da página -->
+
+<head>
+    <!-- Definição do conjunto de caracteres para suportar caracteres especiais -->
+    <meta charset="UTF-8">
+    
+    <!-- Definição da largura da viewport para dispositivos móveis -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Título da página exibido na aba do navegador -->
+    <title>Utilização do Input</title>
+    
+    <!-- Estilos CSS -->
+    <style>
+        /* Estilo para o formulário */
+        form {
+            margin: auto; /* Centraliza horizontalmente */
+            max-width: 400px; /* Largura máxima do formulário */
+            padding: 20px; /* Espaçamento interno */
+            border: 1px solid #ccc; /* Borda */
+            border-radius: 5px; /* Borda arredondada */
+        }
+
+        /* Estilo para os rótulos */
+        label {
+            display: block; /* Exibe em bloco */
+            margin-bottom: 10px; /* Margem inferior */
+        }
+
+        /* Estilo para os campos de entrada */
+        input[type="text"],
+        input[type="number"],
+        input[type="email"],
+        input[type="url"],
+        input[type="date"],
+        input[type="file"],
+        input[type="search"],
+        input[type="password"],
+        input[type="range"],
+        textarea {
+            width: 100%; /* Largura total */
+            padding: 10px; /* Espaçamento interno */
+            margin-bottom: 10px; /* Margem inferior */
+            border: 1px solid #ccc; /* Borda */
+            border-radius: 3px; /* Borda arredondada */
+            box-sizing: border-box; /* Caixa de modelagem de borda */
+        }
+
+        /* Estilo para o botão de envio */
+        input[type="submit"] {
+            background-color: #4CAF50; /* Cor de fundo */
+            color: white; /* Cor do texto */
+            padding: 10px 20px; /* Espaçamento interno */
+            border: none; /* Sem borda */
+            border-radius: 3px; /* Borda arredondada */
+            cursor: pointer; /* Cursor do mouse */
+        }
+
+        /* Estilo para o botão de envio ao passar o mouse */
+        input[type="submit"]:hover {
+            background-color: #45a049; /* Cor de fundo ao passar o mouse */
+        }
+    </style>
+</head>
+
+<body>
+    <form> <!-- Início do formulário -->
+        <!-- Utilização do elemento <label> para associar texto descritivo aos campos de entrada -->
+        <!-- Utilização da quebra de linha <br> para separar visualmente os elementos -->
+        <!-- 
+            Tipos de Inputs:
+            - text: Campo de texto normal.
+            - number: Campo para entrada de números.
+                - Atributos:
+                    - min: Valor mínimo permitido.
+                    - max: Valor máximo permitido.
+                    - step: Incremento entre os valores.
+            - button: Botão de envio de formulário.
+            - range: Barra deslizante para selecionar um valor de um intervalo.
+            - email: Campo para entrada de endereço de e-mail válido.
+            - url: Campo para entrada de endereço URL válido.
+            - date: Campo para entrada de data.
+            - checkbox: Caixa de seleção para aceitar uma opção.
+        -->
+        <!-- Campo de texto -->
+        <label for="texto">Digite aqui:</label> <input type="text" id="texto"/><br>
+        
+        <!-- Campo de número -->
+        <label for="numero">Número:</label> <input type="number" id="numero" min="0" max="99" step="2"/><br>
+        
+        <!-- Botão com texto -->
+        <label for="button1">Botão com Button:</label> <button id="button1">Enviar</button><br>
+        
+        <!-- Botão -->
+        <label for="button2">Botão:</label> <input type="button" id="button2" value="Enviar"/><br>
+        
+        <!-- Barra deslizante (Range) -->
+        <label for="range">Range:</label> <input type="range" id="range"/><br>
+        
+        <!-- Campo de e-mail -->
+        <label for="email">E-mail:</label> <input type="email" id="email"/><br>
+        
+        <!-- Campo de URL -->
+        <label for="url">Site:</label> <input type="url" id="url"/><br>
+        
+        <!-- Campo de data -->
+        <label for="data">Data:</label> <input type="date" id="data"/><br>
+        
+        <!-- Caixa de seleção (Checkbox) -->
+        <label for="checkbox">Checkbox:</label> <input type="checkbox" id="checkbox"/><br>
+        
+        <!-- Botão de opção (Radio) -->
+        <label for="radio">Radio:</label> <input type="radio" name="aceita"/><br>
+        
+        <!-- Campo oculto -->
+        <label for="hidden">Hidden:</label> <input type="hidden"/><br>
+        
+        <!-- Campo para upload de arquivo -->
+        <label for="file">File:</label> <input type="file"/><br>
+        
+        <!-- Campo de pesquisa -->
+        <label for="search">Search</label> <input type="search"/><br>
+        
+        <!-- Botão de envio de formulário -->
+        <label for="submit">Button</label> <input type="submit"/><br>
+    </form> <!-- Fim do formulário -->
+</body>
+</html>

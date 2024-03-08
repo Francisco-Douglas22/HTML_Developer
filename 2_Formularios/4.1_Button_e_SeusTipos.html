@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en"> <!-- Define o idioma da página como inglês -->
+<head>
+    <meta charset="UTF-8"> <!-- Define o conjunto de caracteres como UTF-8 para suportar caracteres especiais -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Define a largura da viewport para dispositivos móveis e a escala inicial -->
+    <title>Document</title> <!-- Define o título da página exibido na aba do navegador -->
+</head>
+
+<body>
+    <!-- Utilização da tag <form> para criação de formulários -->
+    <!-- 
+        Tag <form>:
+        - Usada para criar um formulário para coletar dados do usuário.
+        - Atributos:
+            - onsubmit: Evento acionado quando o formulário é submetido. Pode ser utilizado para validar o formulário.
+            - method: Método de envio dos dados (GET ou POST). Neste caso, está definido como GET.
+                - GET: Dados são enviados pela URL (mais visíveis, usado para requisições não seguras).
+                - POST: Dados são enviados no corpo da requisição (mais seguro).
+    -->
+    <form onsubmit="" method="get"> <!-- Início do formulário -->
+        <!-- Utilização do elemento <label> para associar texto descritivo aos campos de entrada -->
+        <!-- Utilização da quebra de linha <br> para separar visualmente os elementos -->
+        <!-- 
+            Tag <label>:
+            - Usada para associar um rótulo descritivo a um campo de entrada.
+        -->
+        <!-- Campo de texto -->
+        <label>Nome *:</label> <!-- Rótulo do campo de texto -->
+        <input type="text" name="Nome"><br> <!-- Campo de entrada de texto para inserir o nome -->
+        
+        <!-- Campo de número -->
+        <label>Idade *:</label> <!-- Rótulo do campo de número -->
+        <input type="number" name="Idade"><br> <!-- Campo de entrada numérica para inserir a idade -->
+        
+        <!-- Campo de e-mail -->
+        <label>Email *:</label> <!-- Rótulo do campo de e-mail -->
+        <input type="email" name="Email:"><br> <!-- Campo de entrada de e-mail -->
+        
+        <!-- Campo de senha -->
+        <label>Senha *:</label> <!-- Rótulo do campo de senha -->
+        <input type="password" name="Senha:"><br> <!-- Campo de entrada de senha -->
+        
+        <!-- Criando um botão com a tag <button> -->
+        <!-- 
+            Tag <button>:
+            - Usada para criar um botão clicável.
+            - Atributos:
+                - type: Define o tipo de botão. Neste caso, está definido como "button".
+                    - button: Botão normal.
+                - onclick: Evento JavaScript acionado quando o botão é clicado. Neste caso, exibe um alerta.
+        -->
+        <button type="button" onclick="alert('Cadastro Realizado com Sucesso')">Clicavel</button><br>
+        <!-- Fim do botão -->
+    </form> <!-- Fim do formulário -->
+</body>
+
+</html>

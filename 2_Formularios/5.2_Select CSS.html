@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8"> <!-- Define o conjunto de caracteres como UTF-8 para suportar caracteres especiais -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Define a largura da viewport para dispositivos móveis e a escala inicial -->
+    <title>SELECT E SEUS TIPOS</title> <!-- Define o título da página exibido na aba do navegador -->
+
+    <!-- CSS para estilizar o formulário -->
+    <style>
+        body {
+            font-family: Arial, sans-serif; /* Define a fonte do texto */
+            margin: 0; /* Remove as margens ao redor do corpo */
+            padding: 0; /* Remove o preenchimento interno do corpo */
+            background-color: #f0f0f0; /* Define a cor de fundo do corpo */
+        }
+
+        form {
+            max-width: 400px; /* Define a largura máxima do formulário */
+            margin: 50px auto; /* Centraliza o formulário na página */
+            background-color: #fff; /* Define a cor de fundo do formulário */
+            padding: 20px; /* Adiciona um preenchimento interno ao formulário */
+            border-radius: 8px; /* Adiciona bordas arredondadas ao formulário */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra suave ao formulário */
+        }
+
+        label {
+            display: block; /* Define os rótulos como elementos de bloco */
+            margin-bottom: 5px; /* Adiciona um espaço entre os rótulos */
+            font-weight: bold; /* Define a fonte em negrito para os rótulos */
+        }
+
+        input[type="text"],
+        input[type="email"],
+        select {
+            width: 100%; /* Define a largura dos campos de entrada */
+            padding: 8px; /* Adiciona um preenchimento interno aos campos de entrada */
+            margin-bottom: 15px; /* Adiciona um espaço entre os campos de entrada */
+            border: 1px solid #ccc; /* Adiciona uma borda sólida aos campos de entrada */
+            border-radius: 5px; /* Adiciona bordas arredondadas aos campos de entrada */
+            box-sizing: border-box; /* Define a caixa de modelo para incluir o preenchimento e a borda na largura total */
+        }
+
+        button[type="submit"] {
+            background-color: #007bff; /* Define a cor de fundo do botão de envio */
+            color: #fff; /* Define a cor do texto do botão de envio */
+            padding: 10px 20px; /* Adiciona um preenchimento interno ao botão de envio */
+            border: none; /* Remove a borda do botão de envio */
+            border-radius: 5px; /* Adiciona bordas arredondadas ao botão de envio */
+            cursor: pointer; /* Define o cursor do mouse como ponteiro ao passar sobre o botão */
+        }
+
+        button[type="submit"]:hover {
+            background-color: #0056b3; /* Define a cor de fundo quando o botão de envio é destacado */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Utilização da tag <form> para criação de formulários -->
+    <form onsubmit="" method="get"> <!-- Início do formulário -->
+
+        <!-- Utilização do elemento <label> para associar texto descritivo aos campos de entrada -->
+        <!-- Utilização da quebra de linha <br> para separar visualmente os elementos -->
+        <label>Nome *:</label> <!-- Rótulo do campo de texto -->
+        <input type="text" name="name"><br> <!-- Campo de entrada de texto para inserir o nome -->
+
+        <label>Cargo *:</label> <!-- Rótulo da caixa de seleção -->
+        <select name="role"> <!-- Caixa de seleção de cargo -->
+            <option value="">Selecione o Cargo</option> <!-- Opção padrão -->
+            <option value="gerente">Gerente</option> <!-- Opção para o cargo de gerente -->
+            <option value="diretor">Diretor</option> <!-- Opção para o cargo de diretor -->
+            <option value="presidente">Presidente</option> <!-- Opção para o cargo de presidente -->
+        </select>
+        <br>
+
+        <label>Assunto:</label> <!-- Rótulo do campo de texto -->
+        <input type="text" name="subject"><br> <!-- Campo de entrada de texto para inserir o assunto -->
+
+        <button type="submit">Enviar</button> <!-- Botão para enviar o formulário -->
+    
+    </form> <!-- Fim do formulário -->
+    
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- Definição do conjunto de caracteres para suportar caracteres especiais -->
+    <meta charset="UTF-8">
+
+    <!-- Definição da largura da viewport para dispositivos móveis -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Título da página exibido na aba do navegador -->
+    <title>Trabalhando Com Formulários de Cadastro</title>
+
+    <!-- Estilos CSS -->
+    <style>
+        /* Estilo para o corpo da página */
+        body {
+            font-family: Arial, sans-serif; /* Define a fonte do texto */
+            display: flex; /* Utiliza flexbox para alinhar os elementos */
+            justify-content: center; /* Centraliza horizontalmente */
+            align-items: center; /* Centraliza verticalmente */
+            height: 100vh; /* Define a altura da página */
+            margin: 0; /* Remove margens */
+            background-color: #f4f4f4; /* Define a cor de fundo */
+        }
+
+        /* Estilo para o formulário */
+        form {
+            background-color: #fff; /* Cor de fundo do formulário */
+            padding: 20px; /* Espaçamento interno */
+            border-radius: 5px; /* Borda arredondada */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra */
+        }
+
+        /* Estilo para os campos de entrada e botão */
+        input[type="text"],
+        input[type="number"],
+        input[type="email"],
+        input[type="password"],
+        button[type="submit"] {
+            width: 100%; /* Largura total */
+            padding: 10px; /* Espaçamento interno */
+            margin-bottom: 10px; /* Margem inferior */
+            border: 1px solid #ccc; /* Borda */
+            border-radius: 3px; /* Borda arredondada */
+            box-sizing: border-box; /* Caixa de modelagem de borda */
+        }
+
+        /* Estilo para o botão de envio */
+        button[type="submit"] {
+            background-color: #4CAF50; /* Cor de fundo */
+            color: white; /* Cor do texto */
+            cursor: pointer; /* Cursor do mouse */
+        }
+
+        /* Estilo para o botão de envio ao passar o mouse */
+        button[type="submit"]:hover {
+            background-color: #45a049; /* Cor de fundo ao passar o mouse */
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- Utilização da tag <form> para criação de formulários -->
+    <!-- 
+        Tag <form>:
+        - Usada para criar um formulário para coletar dados do usuário.
+        - Atributos:
+            - name: Nome do formulário (opcional, pode ser usado para referência via JavaScript).
+            - method: Método de envio dos dados (GET ou POST).
+            - GET: Dados são enviados pela URL (mais visíveis, usado para requisições não seguras).
+            - POST: Dados são enviados no corpo da requisição (mais seguro).
+            - target: Especifica onde abrir o resultado do envio do formulário (_blank para nova aba/janela).
+            - autocomplete: Define se o preenchimento automático de campos é ativado (on para ativado, off para desativado).
+            - onsubmit: Evento acionado quando o formulário é submetido.
+                - Neste exemplo, um alerta é exibido quando o formulário é enviado.
+            - action: URL para onde os dados do formulário serão enviados.
+    -->
+    <form name="signup"  
+          method="post" 
+          target="_blank"
+          autocomplete="on"
+          onsubmit="alert('Dados enviados')"
+          action="https://www.siteTeste.com">
+
+        <!-- Inputs para coleta de dados -->
+        <!-- 
+            Tipos de inputs:
+            - text: Campo de texto simples.
+            - number: Campo para entrada de números.
+            - email: Campo para entrada de endereço de e-mail.
+            - password: Campo para entrada de senha (os caracteres são ocultos).
+            Atributos:
+            - type: Tipo de input.
+            - name: Nome do campo (usado para identificar o dado enviado).
+        -->
+        Nome: <input type="text" name="name"/><br>
+        Idade: <input type="number" name="age"/><br>
+        E-mail: <input type="email" name="email"/><br>
+        Senha: <input type="password" name="password"/><br>
+
+        <!-- Botão de envio do formulário -->
+        <button type="submit">Enviar</button>
+    </form>
+    
+</body>
+</html>

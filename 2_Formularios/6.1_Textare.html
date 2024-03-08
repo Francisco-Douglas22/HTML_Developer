@@ -1,0 +1,44 @@
+<!DOCTYPE html> <!-- Declaração do tipo de documento HTML -->
+<html lang="en"> <!-- Tag raiz do documento HTML, define o idioma da página -->
+
+<head>
+    <meta charset="UTF-8"> <!-- Define o conjunto de caracteres UTF-8 para suportar caracteres especiais -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Define a largura da viewport para dispositivos móveis e ajusta a escala inicial -->
+    <title>Document</title> <!-- Define o título da página exibido na aba do navegador -->
+</head>
+
+<body>
+    <form onsubmit="" method="get"> <!-- Tag para criação de formulários -->
+        <!-- Tag label associada a um campo de entrada para o nome -->
+        <label>Nome:</label>
+        <!-- Campo de entrada de texto para o nome -->
+        <input type="text" name="name"><br>
+
+        <!-- Tag label associada a um campo de seleção para o cargo -->
+        <label>Cargo:</label>
+        <!-- Tag select para criar um dropdown de seleção -->
+        <select name="role">
+            <!-- Opção padrão para seleção do cargo -->
+            <option value="">Selecione o Cargo</option>
+            <!-- Opções de cargos disponíveis -->
+            <option value="Gerente">Gerente</option>
+            <option value="Diretor">Diretor</option>
+            <option value="Presidente">Presidente</option>
+        </select><br> 
+
+        <!-- Tag label associada a um campo de entrada para o assunto -->
+        <label>Assunto:</label>
+        <!-- Campo de entrada de texto para o assunto -->
+        <input type="text" name="subject"><br>
+
+        <!-- Tag label associada a um campo de entrada para a mensagem -->
+        <label>Mensagem:</label>
+        <!-- Caixa de texto para a mensagem -->
+        <textarea rows="5" cols="50" name="message"></textarea><br>
+
+        <!-- Botão de envio do formulário -->
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+
+</html>
