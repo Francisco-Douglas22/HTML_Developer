@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Define o conjunto de caracteres como UTF-8 -->
+    <meta charset="UTF-8">
+    <!-- Define a escala inicial para dispositivos móveis -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Define o título da página -->
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Título da página -->
+    <h1>Embeds vs Iframes</h1>
+    
+    <!-- Embed descontinuado -->
+    <!-- Tags p e span para parágrafos e elementos de texto, respectivamente -->
+    <!-- Neste bloco de texto, há várias partes de texto Lorem Ipsum dentro de elementos span, dentro de um elemento p -->
+    <p>
+        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro ut voluptates labore iusto facilis excepturi recusandae </span>
+        <span>Eum, tempore similique ipsa rerum impedit possimus quibusdam veniam ut nobis cupiditate hic dignissimos nulla harum magni, reprehenderit voluptatibus </span>
+        <span>Error saepe illo commodi velit aliquid sed minima ex, sit corporis architecto voluptatum numquam ipsam cupiditate rem unde iusto illum </span>
+        <span>Sed, amet explicabo! Officia adipisci sed corrupti ipsa, fugiat pariatur. st natus at voluptas nam ab recusandae eligendi aliquid optio eius inventore, </span>
+    </p>
+
+    <!-- Segundo conjunto de parágrafos -->
+    <!-- Aqui há outro bloco de texto semelhante ao anterior, dentro de um elemento p -->
+    <p>
+        <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis labore ipsum harum quod consequatur, neque nostrum dolorum </span>
+        <span>Qui dolorum repellendus harum a magni? Vero nesciunt tenetur deleniti officia aperiam dolorum totam eligendi impedit! Blanditiis sint repellat quae perspiciatis magnam fuga </span>
+        <span>Deserunt architecto eos aperiam quam a reprehenderit veniam delectus voluptatibus, eum doloribus amet, culpa quo incidunt nulla repellendus accusantium, expedita ad </span>
+    </p>
+
+    <!-- Embed descontinuado -->
+    <!-- Atributos: src (fonte do vídeo), width (largura do vídeo), height (altura do vídeo) -->
+    <!-- A tag embed é usada para incorporar conteúdo multimídia, mas não é mais recomendada para incorporar vídeos do YouTube -->
+    <!-- Este embed não carregará mais vídeos online, pois está descontinuado -->
+    <embed src="https://www.youtube.com/watch?v=DfcXJYv_dxE" width="300" height="200"/>
+
+    <!-- Tag video para exibir vídeos -->
+    <!-- Atributos: controls (exibe controles de reprodução), autoplay (inicia a reprodução automaticamente), width (largura do vídeo), height (altura do vídeo) -->
+    <!-- A tag video é usada para incorporar vídeos em uma página HTML -->
+    <!-- Aqui, um vídeo do YouTube é incorporado usando a tag video -->
+    <!-- A tag source define a fonte do vídeo -->
+    <!-- Este vídeo também não carregará devido à URL incorreta. O YouTube requer URLs de incorporação específicas -->
+    <video controls autoplay width="300" height="200">
+        <source src="https://www.youtube.com/watch?v=DfcXJYv_dxE">
+    </video>
+</body>
+</html>
