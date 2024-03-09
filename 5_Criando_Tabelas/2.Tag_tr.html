@@ -2,10 +2,107 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <!-- Define o conjunto de caracteres do documento como UTF-8 -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Configura a viewport para que o site seja responsivo em dispositivos móveis -->
     <title>Document</title>
+    <!-- Define o título da página -->
+
+    <!-- CSS embutido -->
+    <style>
+        /* Define um estilo para as linhas pares da tabela */
+        table tr:nth-child(even){
+            background-color: rgba(128, 128, 128, 0.155);
+            /* Define a cor de fundo das linhas pares com uma transparência */
+        }
+        /* Define um estilo para as células quando o mouse passa sobre elas */
+        table tr:hover td{
+            background-color: rgba(0, 0, 255, 0.078);
+            /* Define a cor de fundo das células com uma transparência ao passar o mouse */
+        }
+    </style>
+
 </head>
 <body>
+    <!-- Tag table -->
+    <!-- Define uma tabela -->
+    <!-- Atributos: -->
+    <!-- summary -->
+    <!-- Fornecem uma descrição resumida do conteúdo da tabela -->
+    <!-- border -->
+    <!-- Define a largura da borda das células da tabela -->
+    <!-- width -->
+    <!-- Define a largura da tabela -->
+    <!-- align -->
+    <!-- Define o alinhamento horizontal da tabela -->
     
+    <table summary="Estou Estudando HTML para Front END"
+            border="1" width="350" align="center">
+        <!-- Define uma tabela com uma descrição resumida, borda, largura e alinhamento -->
+
+        <!-- Tag tr (table row) -->
+        <!-- Define uma linha na tabela -->
+        <tr>
+            <!-- Primeira linha da tabela -->
+            <!-- Tag td (table data) -->
+            <!-- Define uma célula na tabela -->
+            <!-- Contém os cabeçalhos das colunas -->
+            <td>Nome</td>
+            <!-- Conteúdo da primeira célula -->
+            <td>Idade</td>
+            <!-- Conteúdo da segunda célula -->
+            <td>Sexo</td>
+            <!-- Conteúdo da terceira célula -->
+            <td>Profissão</td>
+            <!-- Conteúdo da quarta célula -->
+        </tr>
+        <!-- Fim da primeira linha da tabela -->
+
+        <!-- Nova linha na tabela -->
+        <tr>
+            <!-- Segunda linha da tabela -->
+            <!-- Contém os dados de um indivíduo -->
+            <td>Marcos</td>
+            <!-- Conteúdo da primeira célula -->
+            <td>45</td>
+            <!-- Conteúdo da segunda célula -->
+            <td>Masculino</td>
+            <!-- Conteúdo da terceira célula -->
+            <td>Pedreiro</td>
+            <!-- Conteúdo da quarta célula -->
+        </tr>
+        <!-- Fim da segunda linha da tabela -->
+
+        <!-- Nova linha na tabela -->
+        <tr>
+            <!-- Terceira linha da tabela -->
+            <!-- Contém os dados de um indivíduo -->
+            <td>Mila</td>
+            <!-- Conteúdo da primeira célula -->
+            <td>35</td>
+            <!-- Conteúdo da segunda célula -->
+            <td>Feminino</td>
+            <!-- Conteúdo da terceira célula -->
+            <td>Médica</td>
+            <!-- Conteúdo da quarta célula -->
+        </tr>
+        <!-- Fim da terceira linha da tabela -->
+
+        <!-- Nova linha na tabela -->
+        <tr>
+            <!-- Quarta linha da tabela -->
+            <!-- Contém os dados de um indivíduo -->
+            <td>Francisco</td>
+            <!-- Conteúdo da primeira célula -->
+            <td>28</td>
+            <!-- Conteúdo da segunda célula -->
+            <td>Masculino</td>
+            <!-- Conteúdo da terceira célula -->
+            <td>Engenheiro</td>
+            <!-- Conteúdo da quarta célula -->
+        </tr>
+        <!-- Fim da quarta linha da tabela -->
+    </table>
+    <!-- Fim da tabela -->
 </body>
 </html>

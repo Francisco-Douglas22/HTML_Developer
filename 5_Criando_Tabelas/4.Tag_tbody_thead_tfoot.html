@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Define o conjunto de caracteres do documento como UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Configura a viewport para que o site seja responsivo em dispositivos móveis -->
+    <title>Document</title>
+   
+    <!-- Estilos CSS -->
+    <style>
+        /* Define o estilo para linhas pares da tabela */
+        table tr:nth-child(even){
+            background-color: rgba(128, 128, 128, 0.155);
+        }
+        /* Define o estilo para células quando o cursor passa sobre elas */
+        table tr:hover td{
+            background-color: rgba(0, 0, 255, 0.078);
+        }
+    </style>
+
+</head>
+<body>
+    
+    <!-- Tabela -->
+    <table summary="Estou Estudando HTML para Front END"
+            border="1" width="350" align="center">
+        <!-- Atributo summary fornecendo uma descrição resumida da tabela -->
+
+        <!-- Legenda da tabela -->
+        <caption>Descrição da Tabela</caption>
+
+        <!-- Cabeçalho da tabela -->
+        <thead>
+            <tr>
+                <!-- Cabeçalho das colunas -->
+                <th title="Nome Completo">Nome</th>
+                <!-- Define uma dica de ferramenta para o cabeçalho Nome -->
+                <th>Idade</th>
+                <!-- Cabeçalho Idade -->
+                <th>Sexo</th>
+                <!-- Cabeçalho Sexo -->
+                <th>Profissão</th>
+                <!-- Cabeçalho Profissão -->
+            </tr>
+        </thead>
+
+        <!-- Corpo da tabela -->
+        <tbody>
+            <!-- Linhas de dados -->
+            <tr>
+                <!-- Dados na primeira linha da tabela -->
+                <td>Marcos</td>
+                <!-- Dado do nome Marcos -->
+                <td>45</td>
+                <!-- Dado da idade 45 -->
+                <td>Masculino</td>
+                <!-- Dado do sexo Masculino -->
+                <td>Pedreiro</td>
+                <!-- Dado da profissão Pedreiro -->
+            </tr>
+            
+            <!-- Outras linhas de dados seguem o mesmo padrão -->
+            <tr>
+                <td>Mila</td>
+                <td>35</td>
+                <td>Feminino</td>
+                <td>Médica</td>
+            </tr>
+
+            <tr>
+                <td>Francisco</td>
+                <td>28</td>
+                <td>Masculino</td>
+                <td>Engenheiro</td>
+            </tr>
+        </tbody>
+
+        <!-- Rodapé da tabela -->
+        <tfoot>
+            <!-- Linha de total -->
+            <tr>
+                <!-- Define o total na primeira célula -->
+                <td>Total</td>
+                <!-- Define o total de linhas na segunda célula -->
+                <td>3</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
