@@ -2,17 +2,30 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <!-- Define o conjunto de caracteres do documento como UTF-8 -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Configura a viewport para que o site seja responsivo em dispositivos móveis -->
     <title>Document</title>
 </head>
 <body>
     <!-- Tag audio -->
-    <!-- source -->
-    <!-- controls-->
-    <audio controls>
+    <!-- Tag utilizada para incorporar conteúdo de áudio em uma página web -->
+    <!-- source: Tag utilizada para especificar a origem do conteúdo de áudio -->
+    <!-- controls: Atributo que exibe controles de reprodução de áudio (como play, pause, volume) -->
+    <!-- autoplay: Atributo que indica se o áudio deve começar a ser reproduzido automaticamente ao carregar a página -->
+
+    <!-- Áudio 1 (com autoplay e controles) -->
+    <audio autoplay controls>
         <source src="Sharks.mp3"/>
-        <!--Caso o ne=avegador nao consiga reproduzir, exibe a mensagem-->
-        Seu Navegador nao tem Suporte para Reproduzir audio
+        <!-- Mensagem de fallback caso o navegador não consiga reproduzir o áudio -->
+        Seu navegador não tem suporte para reproduzir áudio.
+    </audio>
+
+    <!-- Áudio 2 (com controles) -->
+    <audio controls>
+        <source src="thunder.mp3"/>
+        <!-- Mensagem de fallback caso o navegador não consiga reproduzir o áudio -->
+        Seu navegador não tem suporte para reproduzir áudio.
     </audio>
 </body>
 </html>
