@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Define o conjunto de caracteres do documento como UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Configura a viewport para que o site seja responsivo em dispositivos móveis -->
+    <title>Document</title>
+   
+    <!-- Estilos CSS -->
+    <style>
+        /* Define sombras para a tabela */
+        table{
+            -webkit-box-shadow: 52px 31px 5px -4px rgba(0,0,0,0.52);
+            -moz-box-shadow: 52px 31px 5px -4px rgba(0,0,0,0.52);
+            box-shadow: 52px 31px 5px -4px rgba(0,0,0,0.52);
+            border: solid 0.5px;
+        }
+        /* Define estilo para os cabeçalhos das colunas */
+        table thead th{
+            background-color: rgba(11, 11, 11, 0.303);
+            border: dashed 1px black;
+        }
+        /* Define estilo para as células do rodapé */
+        table tfoot td{
+            background-color: lightblue;
+        }
+        /* Define estilo para as linhas pares do corpo da tabela */
+        table tbody tr:nth-child(even) td{
+            background-color: lightgray;
+        }
+        /* Define estilo para as células quando o cursor passa sobre elas */
+        table tbody tr:hover td{
+            background-color: #E9E9E9;
+            cursor: pointer;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <!-- Tabela -->
+    <table summary="Estou Estudando HTML para Front END"
+            width="350" align="center" cellspacing="1">
+
+        <!-- Cabeçalho da tabela -->
+        <thead>
+            <!-- Linha de cabeçalho -->
+            <tr>
+                <!-- Célula de cabeçalho com colspan para ocupar 4 colunas -->
+                <th colspan="4">Descrição da Tabela</th>
+            </tr>
+            <!-- Linha de cabeçalho com os nomes das colunas -->
+            <tr>
+                <!-- Define o título da primeira coluna -->
+                <th title="Nome Completo">Nome</th>
+                <!-- Define o título da segunda coluna -->
+                <th>Idade</th>
+                <!-- Define o título da terceira coluna -->
+                <th>Sexo</th>
+                <!-- Define o título da quarta coluna -->
+                <th>Profissão</th>
+            </tr>
+        </thead>
+
+        <!-- Corpo da tabela -->
+        <tbody>
+            <!-- Linhas de dados -->
+            <tr>
+                <!-- Dados na primeira linha da tabela -->
+                <td>Marcos</td>
+                <!-- Dado da idade 45 -->
+                <td>45</td>
+                <!-- Dado do sexo Masculino -->
+                <td>Masculino</td>
+                <!-- Dado da profissão Pedreiro -->
+                <td>Pedreiro</td>
+            </tr>
+            
+            <!-- Outras linhas de dados seguem o mesmo padrão -->
+            <tr>
+                <td>Mila</td>
+                <td>35</td>
+                <td>Feminino</td>
+                <td>Médica</td>
+            </tr>
+
+            <tr>
+                <td>Francisco</td>
+                <td>28</td>
+                <td>Masculino</td>
+                <td>Engenheiro</td>
+            </tr>
+
+            <tr>
+                <td>Miguel</td>
+                <td>48</td>
+                <td>Masculino</td>
+                <td>TI</td>
+            </tr>
+
+            <tr>
+                <td>Ana</td>
+                <td>38</td>
+                <td>Feminina</td>
+                <td>Engenheira</td>
+            </tr>
+
+        </tbody>
+
+        <!-- Rodapé da tabela -->
+        <tfoot>
+            <!-- Linha de total -->
+            <tr>
+                <!-- Define o total na primeira célula -->
+                <td>Total</td>
+                <!-- Define o total de linhas na segunda célula -->
+                <td>5</td>
+                <!-- Define o total de linhas na terceira célula -->
+                <td>5</td>
+                <!-- Define o total de linhas na quarta célula -->
+                <td>5</td>
+            </tr>
+        </tfoot>
+
+    </table>
+</body>
+</html>
