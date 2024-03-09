@@ -2,10 +2,45 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <!-- Define o conjunto de caracteres do documento como UTF-8 -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Configura a viewport para que o site seja responsivo em dispositivos móveis -->
     <title>Document</title>
 </head>
 <body>
-    
+    <!-- Tag video -->
+    <!-- Tag utilizada para incorporar conteúdo de vídeo em uma página web -->
+    <!-- source -->
+    <!-- Tag utilizada para especificar a origem do conteúdo de vídeo -->
+    <!-- track -->
+    <!-- Tag utilizada para definir faixas de texto, como legendas ou descrições de áudio/vídeo -->
+    <!-- kind -->
+    <!-- Atributo que especifica o tipo de faixa de texto, como legendas, legendas descritivas, etc. -->
+    <!-- srclang -->
+    <!-- Atributo que especifica o idioma da faixa de texto -->
+    <!-- default -->
+    <!-- Atributo booleano que indica se a faixa de texto é a predefinição (true) ou não (false) -->
+
+    <video controls autoplay width="500" height="300">
+        <source src="cerebro.mp4"/>
+        <!-- Caso não consiga reproduzir o primeiro vídeo, reproduza o segundo -->
+        <source src="2video.mp4"/>
+    </video>
+
+    <video controls autoplay width="500" height="300">
+        <source src="2video.mp4"/>
+        <!-- Caso não consiga reproduzir o primeiro vídeo, reproduza o segundo -->
+        <source src="cerebro.mp4"/>
+    </video>
+
+    <video controls autoplay width="500" height="300">
+        <source src="A História Da Sua Vida.mp4"/>
+        <!-- Caso não consiga reproduzir o primeiro vídeo, reproduza o segundo -->
+        <source src="2video.mp4"/>
+        <track src="legenda.vtt" kind="captions" srclang="en"/>
+        <!-- Legenda em inglês -->
+        <track src="legenda-pt-br.vtt" kind="captions" srclang="pt-br"/>
+        <!-- Legenda em português do Brasil -->
+    </video>
 </body>
 </html>

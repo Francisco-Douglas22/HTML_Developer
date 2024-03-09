@@ -18,16 +18,27 @@
     <!-- height: Atributo que define a altura do vídeo em pixels -->
 
     <!-- Vídeo 1 -->
-    <video controls>
-        <source src="https://www.youtube.com/watch?v=C1yHhp9-8s4">
+    <video controls autoplay width="600" height="600">
+        <source src="2video.mp4">
         <!-- Mensagem de fallback caso o navegador não consiga reproduzir o vídeo -->
         Seu navegador não pode reproduzir esse vídeo.
     </video>
 
     <!-- Vídeo 2 -->
-    <video controls autoplay width="300" height="200">
-        <source src="https://www.youtube.com/watch?v=DfcXJYv_dxE">
+    <video controls autoplay width="600" height="600">
+        <source src="cerebro.mp4">
     </video>
-    
+
+    <!-- Vídeo do YouTube -->
+    <iframe width="600" height="400" 
+    src="https://www.youtube.com/embed/C1yHhp9-8s4" 
+    title="YouTube video player" frameborder="0" allow="accelerometer; 
+    autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+    allowfullscreen>
+    </iframe>
+    <!-- frameborder: Atributo que define se deve ou não mostrar uma borda ao redor do elemento -->
+    <!-- allow: Atributo que define as permissões concedidas para o elemento, como reprodução automática, gravação de clipboard, etc. -->
+    <!-- title: Atributo que define um título para o elemento -->
+    <!-- allowfullscreen: Atributo que indica se o elemento pode ser exibido em tela cheia -->
 </body>
 </html>
