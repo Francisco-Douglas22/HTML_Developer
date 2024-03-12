@@ -11,7 +11,6 @@
     <!-- Título da página exibido na aba do navegador -->
     <title>Trabalhando Com Formulários de Cadastro</title>
 
-
 </head>
 
 <body>
@@ -30,32 +29,34 @@
                 - Neste exemplo, um alerta é exibido quando o formulário é enviado.
             - action: URL para onde os dados do formulário serão enviados.
     -->
-    <form name="signup"  
-          method="post" 
-          target="_blank"
-          autocomplete="on"
-          onsubmit="alert('Dados enviados')"
-          action="https://www.siteTeste.com">
+    <id class="Formulario">
+        <form name="Nome do formulário"  
+            method="post" 
+            target="_blank"
+            autocomplete="on"
+            onsubmit="alert('Dados enviados')"
+            action="https://www.dio.me/">
 
-        <!-- Inputs para coleta de dados -->
-        <!-- 
-            Tipos de inputs:
-            - text: Campo de texto simples.
-            - number: Campo para entrada de números.
-            - email: Campo para entrada de endereço de e-mail.
-            - password: Campo para entrada de senha (os caracteres são ocultos).
-            Atributos:
-            - type: Tipo de input.
-            - name: Nome do campo (usado para identificar o dado enviado).
-        -->
-        Nome: <input type="text" name="name"/><br>
-        Idade: <input type="number" name="age"/><br>
-        E-mail: <input type="email" name="email"/><br>
-        Senha: <input type="password" name="password"/><br>
+            <!-- Inputs para coleta de dados -->
+            <!-- 
+                Tipos de inputs:
+                - text: Campo de texto simples.
+                - number: Campo para entrada de números.
+                - email: Campo para entrada de endereço de e-mail.
+                - password: Campo para entrada de senha (os caracteres são ocultos).
+                Atributos:
+                - type: Tipo de input.
+                - name: Nome do campo (usado para identificar o dado enviado).
+            -->
+            Nome: <input type="text" name="name"/><br>
+            Idade: <input type="number" name="age"/><br>
+            E-mail: <input type="email" name="email"/><br>
+            Senha: <input type="password" name="password"/><br>
 
-        <!-- Botão de envio do formulário -->
-        <button type="submit">Enviar</button>
-    </form>
+            <!-- Botão de envio do formulário -->
+            <button type="submit">Enviar</button>
+        </form>
+    </id>
     
 </body>
 </html>
