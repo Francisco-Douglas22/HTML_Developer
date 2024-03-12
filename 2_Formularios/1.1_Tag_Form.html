@@ -11,6 +11,8 @@
     <!-- Título da página exibido na aba do navegador -->
     <title>Trabalhando Com Formulários de Cadastro</title>
 
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
 </head>
 
 <body>
@@ -38,6 +40,11 @@
             action="https://www.dio.me/">
 
             <!-- Inputs para coleta de dados -->
+            Nome: <input type="text" name="name"/><br>
+            Idade: <input type="number" name="age"/><br>
+            E-mail: <input type="email" name="email"/><br>
+            Senha: <input type="password" name="password"/><br>
+
             <!-- 
                 Tipos de inputs:
                 - text: Campo de texto simples.
@@ -48,10 +55,6 @@
                 - type: Tipo de input.
                 - name: Nome do campo (usado para identificar o dado enviado).
             -->
-            Nome: <input type="text" name="name"/><br>
-            Idade: <input type="number" name="age"/><br>
-            E-mail: <input type="email" name="email"/><br>
-            Senha: <input type="password" name="password"/><br>
 
             <!-- Botão de envio do formulário -->
             <button type="submit">Enviar</button>
