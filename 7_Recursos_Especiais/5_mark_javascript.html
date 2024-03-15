@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mark e JavaScript</title>
+</head>
+<body>
+    <input type="text" id="busca"><br>
+    <p id="descricao">Materiais simples e de tamanhos pequenos são 
+        essenciais nessa ocasião. Geralmente, para atrair alunos de 
+        séries iniciais, são usados textos com alguma história simples 
+        e com desenhos. Vale ressaltar que o hábito da leitura e da 
+        interpretação aumenta o conhecimento e ajuda na construção 
+        textual.
+    </p>
+
+    <script>
+        var searchField = document.getElementById('busca');
+        var descriptionObject = document.getElementById('descricao');
+        var textToSearch = descriptionObject.innerHTML;
+
+        function realizaBusca(busca){
+            const regex = new RegExp(`(${busca})`, "gi");
+            const occurrences = textToSearch.match(regex);
+            descriptionObject.innerHTML = textToSearch.replace(regex, '<mark>$1</mark>');
+        }
+        searchField.addEventListener("input", (e) => realizaBusca(e.target.value));
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Define a codificação de caracteres como UTF-8 -->
+    <meta charset="UTF-8">
+    <!-- Define a viewport para dispositivos móveis -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título da página -->
+    <title>Canvas</title>
+</head>
+<body>
+    <!-- Elemento canvas para desenho -->
+    <canvas id="myCanvas" width="center" height="120" style="border: 1px solid #000;"></canvas><br/>
+
+    <!-- Script JavaScript -->
+    <script>
+    // Obtém o elemento canvas pelo ID
+    var c = document.getElementById("myCanvas");
+    // Obtém o contexto de renderização 2D do canvas
+    var ctx = c.getContext("2d");
+    // Define a fonte para o contexto de renderização
+    ctx.font = "30px Arial";
+    // Desenha um texto com contorno no canvas nas coordenadas (10, 50)
+    ctx.strokeText("Olá Mundo do HTML", 10, 50);
+    </script>
+</body>
+</html>

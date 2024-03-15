@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Definição do conjunto de caracteres e da escala de visualização -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título da página -->
+    <title>Meter e Progress</title>
+</head>
+<body>
+    <!-- Elemento <meter> para exibir um valor dentro de um intervalo conhecido -->
+    <meter max="100" min="0" value="50">
+    </meter>
+
+    <!-- Elemento <progress> para exibir o progresso de uma tarefa -->
+    <progress  id="progress" max="100" min="0" value="0">
+    </progress>
+
+    <script>
+        // Seleciona o elemento de progresso pelo ID
+        var progress = document.getElementById('progress');
+        // Define um intervalo para aumentar o valor do progresso a cada segundo
+        const interval = setInterval(() => {
+            progress.value += 10; // Aumenta o valor do progresso em 10
+            // Verifica se o valor do progresso atingiu 100
+            if(progress.value >= 100){
+                alert('Carregamento realizado com sucesso'); // Exibe um alerta quando o carregamento é concluído
+                clearInterval(interval); // Limpa o intervalo para parar de aumentar o progresso
+            }
+        }, 1000); // Define o intervalo de 1000 milissegundos (1 segundo)
+        progress.value = 1; // Inicializa o valor do progresso como 1
+    </script>
+    
+</body>
+</html>
