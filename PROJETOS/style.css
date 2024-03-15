@@ -2,10 +2,14 @@ html, body {
     margin: 0;
 }
 body {
-    background-color: #dadada50;
+    font-family: Sora, sans-serif;
     display: flex;
     justify-content: center;
-    font-family: Sora, sans-serif;
+    align-items: center;
+    height: 100%;
+    margin: 12;
+    background-color: #ede7e750;
+    
 }
 
 .wrapper {
@@ -73,28 +77,71 @@ p {
 
 }
 
-.tabela, table {
-    text-align: center;
-    box-shadow: #c3c6e7;
-    border: 2px;
-
-
+ul, li {
+    line-height: 1.5;
 }
 
 
-table tbody tr:nth-child(even) td{
-    background-color: rgb(231, 231, 231);
-}
-table tbody tr:hover td{
-    background-color: #E9E9E9;
-    cursor: pointer;
-
-}
-
-blockquote {
+blockquote{
     font-style: italic;
-    color: #555;
-    border-left: 4px solid #0087A0;
-    padding-left: 10px;
+    border-left: rgb(158, 138, 219) solid 10px;
+    padding: 10px;
     margin-top: 40px;
+    margin-left: 5px;
+    background-color: #d9e8f2;
 }
+
+
+
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="password"],
+button[type="submit"] {
+    width: 100%; /* Largura total */
+    padding: 10px; /* Espaçamento interno */
+    margin-bottom: 10px; /* Margem inferior */
+    border: 2px solid #ccc; /* Borda */
+    border-radius: 10px; /* Borda arredondada */
+    box-sizing: border-box; /* Caixa de modelagem de borda */
+}
+
+button[type="submit"] {
+    background-color: #4c89af; /* Cor de fundo */
+    color: white; /* Cor do texto */
+    cursor: pointer; /* Cursor do mouse */
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049; /* Cor de fundo ao passar o mouse */
+}
+
+
+.tabela, 
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adicionando valores específicos para sombra */
+}
+
+
+/* Adicionando regras para cores alternadas de linha */
+.tabela tr:nth-child(even),
+table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+
+
+
+
+
+
