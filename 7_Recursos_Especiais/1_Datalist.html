@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Definindo a codificação do documento -->
+    <meta charset="UTF-8">
+    <!-- Configurando a viewport para dispositivos móveis -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título da página -->
+    <title>Datalist</title>
+</head>
+<body>
+    <!-- Input com um datalist associado -->
+    <input list="browsers" type="search" name="search"/>
+    <!-- Datalist com opções de navegadores -->
+    <datalist id="browsers">
+        <!-- Opções para seleção -->
+        <option>Google Chrome</option>
+        <option>Firefox</option>
+        <option>Tor browser</option>
+        <option>Mozilla Firefox</option>
+        <option>Microsoft Edge</option>
+    </datalist>
+    <!-- Quebra de linha e linha horizontal para separar os elementos -->
+    <br>
+    <hr>
+
+    <!-- Select para escolha de navegador -->
+    <select name="browser" id="">
+        <!-- Opção padrão -->
+        <option value="navegador">Selecione seu Navegador</option>
+        <!-- Opções de navegadores -->
+        <option value="chrome">Google Chrome</option>
+        <option value="firefox">Firefox</option>
+        <option value="tor browser">Tor browser</option>
+        <option value="mozilla">Mozilla Firefox</option>
+        <option value="edge">Microsoft Edge</option>
+    </select>
+</body>
+</html>
