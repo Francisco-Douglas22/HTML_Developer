@@ -2,61 +2,44 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <!-- Define o conjunto de caracteres do documento como UTF-8 -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Configura a viewport para que o site seja responsivo em dispositivos móveis -->
     <title>Trabalhando Com Tabelas</title>
-    <!-- Define o título da página -->
+
 </head>
 
-<body>
-    <!-- Tag table -->
-    <!-- Tag utilizada para criar uma tabela -->
+<body style="text-align: justify">
+    <!-- Tag <table> utilizada para criar uma tabela -->
     <!-- Atributos: -->
-    <!-- border -->
-    <!-- Atributo que define a largura da borda das células da tabela -->
-    <!-- align -->
-    <!-- Atributo que define o alinhamento horizontal da tabela -->
-    <!-- cellspacing -->
-    <!-- Atributo que define o espaço entre as células da tabela -->
-    <!-- cellpadding -->
-    <!-- Atributo que define o espaço dentro das células da tabela -->
-    <!-- summary -->
-    <!-- Atributo que fornece uma descrição resumida do conteúdo da tabela -->
+    <!-- border: define a largura da borda das células da tabela -->
+    <!-- align: define o alinhamento horizontal da tabela -->
+    <!-- cellspacing: define o espaço entre as células da tabela -->
+    <!-- cellpadding: define o espaço dentro das células da tabela -->
+    <!-- summary: fornece uma descrição resumida do conteúdo da tabela -->
 
-    <table border="1" width="200" align="center" cellspacing="10" cellpadding="10" summary="Essa Tabela e Referente a um Estudo HTML">
-        <!-- Define uma tabela com borda de tamanho 1 pixel -->
-        <!-- Define a largura da tabela como 200 pixels -->
-        <!-- Alinha a tabela ao centro -->
-        <!-- Define um espaço de 10 pixels entre as células -->
-        <!-- Define um espaço interno de 10 pixels dentro das células -->
-        <!-- Fornece uma descrição resumida da tabela -->
+    <table border="1" width="200" align="center" cellspacing="10" 
+        cellpadding="10" summary="Tabela Estudo HTML">
         
-        <!-- Tag tr (table row) -->
-        <!-- Tag utilizada para definir uma linha na tabela -->
+        <!-- Tag tr (table row) definir uma linha na tabela -->
 
         <tr>
-            <!-- Primeira linha da tabela -->
-            <!-- Tag td (table data) -->
-            <!-- Tag utilizada para definir uma célula na tabela -->
-            <!-- Contém os dados da primeira linha -->
             <td>Nome</td>
-            <!-- Conteúdo da primeira célula -->
             <td>Idade</td>
-            <!-- Conteúdo da segunda célula -->
         </tr>
-        <!-- Fim da primeira linha da tabela -->
 
-        <!-- Nova linha na tabela -->
         <tr>
-            <!-- Segunda linha da tabela -->
             <td>Douglas</td>
-            <!-- Conteúdo da primeira célula -->
             <td>28</td>
-            <!-- Conteúdo da segunda célula -->
         </tr>
-        <!-- Fim da segunda linha da tabela -->
+
+        <tr>
+            <td><image src="computador.jpg" 
+                       width="200"></image></td>
+            <td>Venda TV
+                <p>Preço de 3560</p><br>
+            </td>
+        </tr>
+
     </table>
-    <!-- Fim da tabela -->
+
 </body>
 </html>
