@@ -1,39 +1,46 @@
+/* Estilos para todo o corpo da página */
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-}
-
-.Formulario {
-    width: 300px; /* Defina a largura desejada */
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #f9f9f9;
-}
-
-.Formulario form {
-    display: flex;
-    flex-direction: column;
-}
-
-.Formulario input,
-.Formulario button {
-    margin-bottom: 10px;
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-}
-
-.Formulario button {
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-}
-
-.Formulario button:hover {
-    background-color: #0056b3;
-}
+    display: flex; /* Define o layout do corpo usando flexbox */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+    height: 100vh; /* Define a altura do corpo como 100% da altura da viewport */
+    margin: 0; /* Remove a margem padrão do corpo */
+  }
+  
+  /* Estilos para elementos com a classe "Formulario" */
+  .Formulario {
+    width: 300px; /* Define a largura do container do formulário */
+    padding: 20px; /* Adiciona padding interno ao container do formulário */
+    border: 1px solid #ccc; /* Adiciona uma borda sólida de 1px na cor cinza claro (#ccc) */
+    border-radius: 5px; /* Adiciona cantos arredondados com raio de 5px */
+    background-color: #f9f9f9; /* Define a cor de fundo como cinza claro (#f9f9f9) */
+  }
+  
+  /* Estilos para o elemento `<form>` dentro de elementos com a classe "Formulario" */
+  .Formulario form {
+    display: flex; /* Define o layout do elemento `<form>` usando flexbox */
+    flex-direction: column; /* Organiza os elementos do formulário em uma coluna (um abaixo do outro) */
+  }
+  
+  /* Estilos para todos os elementos `<input>` e `<button>` dentro de elementos com a classe "Formulario" */
+  .Formulario input,
+  .Formulario button {
+    margin-bottom: 10px; /* Adiciona margem inferior de 10px a cada campo de entrada e botão */
+    padding: 8px; /* Adiciona padding interno de 8px a cada campo de entrada e botão */
+    border: 1px solid #ccc; /* Adiciona uma borda sólida de 1px na cor cinza claro (#ccc) */
+    border-radius: 3px; /* Adiciona cantos arredondados com raio de 3px */
+  }
+  
+  /* Estilos específicos para elementos `<button>` dentro de elementos com a classe "Formulario" */
+  .Formulario button {
+    background-color: #007bff; /* Define a cor de fundo do botão como azul (#007bff) */
+    color: #fff; /* Define a cor do texto do botão como branco (#fff) */
+    border: none; /* Remove a borda padrão do botão */
+    cursor: pointer; /* Muda o cursor do mouse para o formato "mão" ao passar por cima do botão */
+  }
+  
+  /* Estilos para o estado "hover" dos elementos `<button>` dentro de elementos com a classe "Formulario" */
+  .Formulario button:hover {
+    background-color: #0056b3; /* Muda a cor de fundo do botão para um azul mais escuro (#0056b3) ao passar o mouse */
+  }
+  
