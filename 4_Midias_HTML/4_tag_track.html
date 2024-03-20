@@ -2,25 +2,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <!-- Define o conjunto de caracteres do documento como UTF-8 -->
+    <!-- Define o conjunto de caracteres do documento como UTF-8 para suporte a caracteres especiais -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Configura a viewport para que o site seja responsivo em dispositivos móveis -->
+    <!-- Configura a viewport para que o site seja responsivo em dispositivos móveis, ajustando-se ao tamanho da tela -->
     <title>Document</title>
 </head>
 <body>
-    <!-- Tag video -->
-    <!-- Tag utilizada para incorporar conteúdo de vídeo em uma página web -->
-    <!-- source -->
-    <!-- Tag utilizada para especificar a origem do conteúdo de vídeo -->
-    <!-- track -->
-    <!-- Tag utilizada para definir faixas de texto, como legendas ou descrições de áudio/vídeo -->
-    <!-- kind -->
-    <!-- Atributo que especifica o tipo de faixa de texto, como legendas, legendas descritivas, etc. -->
-    <!-- srclang -->
-    <!-- Atributo que especifica o idioma da faixa de texto -->
-    <!-- default -->
-    <!-- Atributo booleano que indica se a faixa de texto é a predefinição (true) ou não (false) -->
+    <!-- Seção de vídeos com legendas -->
+    <!-- A tag <video> é usada para incorporar conteúdo de vídeo em uma página web -->
+    <!-- A tag <source> especifica a origem do conteúdo de vídeo, permitindo múltiplas fontes para fallback -->
+    <!-- A tag <track> define faixas de texto, como legendas ou descrições de áudio/vídeo, melhorando a acessibilidade -->
+    <!-- O atributo 'kind' especifica o tipo de faixa de texto (legendas, legendas descritivas, etc.) -->
+    <!-- O atributo 'srclang' especifica o idioma da faixa de texto -->
+    <!-- O atributo 'default' indica se a faixa de texto é a predefinição (true) ou não (false) -->
 
+    <!-- Primeiro vídeo com legendas em português do Brasil -->
     <video controls autoplay width="500" height="300">
         <source src="porque ele vive.mp4"/>
         <!-- Caso não consiga reproduzir o primeiro vídeo, reproduza o segundo -->
@@ -28,6 +24,7 @@
         <track src="porque_ele_vive.vtt" kind="captions" srclang="pt-br"/>
     </video>
 
+    <!-- Segundo vídeo sem legendas -->
     <video controls autoplay width="500" height="300">
         <source src="2video.mp4"/>
         <!-- Caso não consiga reproduzir o primeiro vídeo, reproduza o segundo -->
