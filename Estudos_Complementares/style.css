@@ -1,0 +1,65 @@
+/* Define o modelo de caixa para todos os elementos */
+* {
+    box-sizing: border-box;
+}
+
+/* Estilizações para o corpo do documento */
+body{
+    font-family: Arial, Helvetica, sans-serif; /* Define a família de fontes */
+}
+
+/* Estilos para o cabeçalho */
+header {
+    background-color: #666; /* Cor de fundo */
+    padding: 30px; /* Espaçamento interno */
+    text-align: center; /* Alinhamento do texto */
+    font-size: 35px; /* Tamanho da fonte */
+    color: white; /* Cor do texto */
+}
+
+/* Estilos para a navegação */
+nav {
+    float: left; /* Define o alinhamento flutuante à esquerda */
+    width: 30%; /* Largura */
+    height: 300px; /* Altura */
+    background: #ccc; /* Cor de fundo */
+    padding: 20px; /* Espaçamento interno */
+}
+
+/* Estilos para a lista de navegação */
+nav ul{
+    list-style-type: none; /* Remove os marcadores de lista */
+    padding: 0; /* Remove o preenchimento padrão */
+}
+
+/* Estilos para o artigo */
+article {
+    float: left; /* Define o alinhamento flutuante à esquerda */
+    padding: 20px; /* Espaçamento interno */
+    width: 70%; /* Largura */
+    background-color: #f1f1f1; /* Cor de fundo */
+    height: 300px; /* Altura */
+}
+
+/* Limpa o float após os elementos flutuantes */
+section::after{
+    content: ""; /* Conteúdo vazio */
+    display: table; /* Define como tabela */
+    clear: both; /* Limpa os flutuadores */
+}
+
+/* Estilos para o rodapé */
+footer{
+    background-color: #777; /* Cor de fundo */
+    padding: 10px; /* Espaçamento interno */
+    text-align: center; /* Alinhamento do texto */
+    color: white; /* Cor do texto */
+}
+
+/* Estilos aplicados quando a largura da tela é menor ou igual a 600px */
+@media (max-width: 600px){
+    nav, article{
+        width: 100%; /* Largura total */
+        height: auto; /* Altura automática */
+    }
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Define o conjunto de caracteres e a escala inicial -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título da página -->
+    <title>Document</title>
+    <!-- Link para arquivo externo de estilos -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Cabeçalho da página -->
+    <header>
+        <!-- Título secundário -->
+        <h2>Fale Conosco</h2>
+    </header>
+    <!-- Seção principal -->
+    <section>
+        <!-- Navegação -->
+        <nav>
+            <!-- Lista de links -->
+            <ul>
+                <!-- Item de menu Home -->
+                <li><a href="4_Novo_Layout.html">Home</a></li>
+                <!-- Item de menu Sobre -->
+                <li><a href="#Sobre">Sobre</a></li>
+                <!-- Item de menu Contato -->
+                <li><a href="#Contato">Contato</a></li>
+            </ul>
+        </nav>
+        <!-- Conteúdo principal -->
+        <article>
+            <!-- Título principal -->
+            <h1>Contato:</h1>
+            <!-- Parágrafo -->
+            <p>Preencha o Formulário Abaixo</p>
+            <!-- Formulário de contato -->
+            <form method="post">
+                <!-- Grupo de campos -->
+                <div>
+                    <!-- Rótulo e campo de entrada para nome -->
+                    <label for="nome">Nome:</label><br>
+                    <input type="text" name="nome" id="nome" placeholder="Digite"><br>
+                    <!-- Rótulo e campo de entrada para número -->
+                    <label for="numero">Número:</label><br>
+                    <input type="number" name="numero" id="numero"><br>
+                    <!-- Rótulo e campo de entrada para email -->
+                    <label for="email">Email:</label><br>
+                    <input type="email" name="email" id="email"><br>
+                    <!-- Rótulo e área de texto para mensagem -->
+                    <label for="mensagem">Mensagem:</label><br>
+                    <textarea name="mensagem" id="mensagem" rows="10"></textarea><br>
+
+                    <!-- Caixas de seleção para linguagens de programação -->
+                    <p>
+                        <label>Quais Linguagens de Programação Você Sabe:</label><br>
+                        <input type="checkbox" name="linguagens" value="HTML">HTML
+                        <input type="checkbox" name="linguagens" value="CSS">CSS
+                        <input type="checkbox" name="linguagens" value="JavaScript">JavaScript
+                        <input type="checkbox" name="linguagens" value="Python">Python
+                    </p>
+
+                    <!-- Botões de opção para preferência de linguagem -->
+                    <p>
+                        <label>Quais as Linguagens Você Prefere:</label><br>
+                        <input type="radio" name="preferencia" value="HTML">HTML
+                        <input type="radio" name="preferencia" value="CSS">CSS
+                        <input type="radio" name="preferencia" value="JavaScript">JavaScript
+                        <input type="radio" name="preferencia" value="Python">Python
+                    </p>
+
+                    <!-- Menu suspenso para seleção de cor favorita -->
+                    <div>
+                        <label>Qual a Sua Cor Favorita:</label>
+                        <select name="cor">
+                            <option value="Azul">Azul</option>
+                            <option value="Preto">Preto</option>
+                            <option value="Branco">Branco</option>
+                        </select>
+                    </div>
+
+                    <!-- Botão de envio do formulário -->
+                    <button type="submit">Enviar Formulário</button>
+                </div>
+            </form>
+        </article>
+    </section>
+</body>
+</html>
